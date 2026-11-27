@@ -16,7 +16,6 @@ public class Archs {
     public Node getNode1(){
         return node1;
     }
-
     public Node getNode2(){
         return node2;
     }

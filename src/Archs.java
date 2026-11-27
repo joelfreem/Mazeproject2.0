@@ -1,12 +1,29 @@
+import org.w3c.dom.Node;
+
 public class Archs {
 
-    public void Node1(){
+    private Node node1;
+    private Node node2;
+    private double length;
+
+    public Archs(Node node1, Node node2, double length){
+        this.node1 = node1;
+        this.node2 = node2;
+        this.length = length;
 
     }
-    public void Node2(){
 
+    public Node getNode1(){
+        return node1;
     }
-    public void Length(){
 
+    public Node getNode2(){
+        return node2;
     }
+
+    public double getLength(){
+        return length;
+    }
+
 }
+

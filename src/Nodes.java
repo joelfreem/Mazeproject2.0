@@ -1,9 +1,7 @@
-import org.w3c.dom.Node;
-
 public class Nodes {
 
     private int nodeId;
-    private Node[] adjacent;
+    private Nodes[] adjacent;
     private int x;
     private int y;
     private boolean visited;
@@ -18,5 +16,23 @@ public class Nodes {
 
         visited = false;
         partOfSolution = false;
+    }
+    public Nodes[] getAdjacent() {
+        return adjacent;
+    }
+    public void setAdjacent(Nodes[] adjacent) {
+        this.adjacent = adjacent;
+    }
+    public State getState() {
+        return state;
+    }
+    public boolean isVisited() {
+        return visited;
+    }
+    public void setVisited(boolean visited) {
+        this.visited = visited;
+    }
+    public void setPartOfSolution(boolean partOfSolution) {
+        this.partOfSolution = partOfSolution;
     }
 }
